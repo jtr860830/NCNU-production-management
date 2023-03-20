@@ -10,8 +10,8 @@ One classic problem which is called **traveling salesman problem**. Imagine bein
 
 1. For a given problem, we should **encode** a solution in the form of a stream of DNA where every gene is one of the parameters of the solution
 2. Create a **population** of random solutions
-3. Evaluate these random solutions, and assign points to them which is called **fitness**.
-4. Sort them by points and discard the lower half.
+3. Evaluate these random solutions, and assign points to them which is called **fitness**
+4. Sort them by points and discard the lower half
 5. Grab the top half of the remaining population, and mix it with the other half which will perform **crossover** and **mutate**
 6. Back to step 3
 
