@@ -1,4 +1,4 @@
-export default class {
+class TSP {
   // the distance between each pair of cities
   #distances = [
     // city 0 to all other cities
@@ -162,3 +162,10 @@ export default class {
     return fitness;
   }
 }
+
+new TSP({
+  populationSize: 100,
+  mutationRate: 0.1,
+  crossoverRate: 0.7,
+  iterationLimit: 1000,
+}).run();

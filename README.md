@@ -1,10 +1,6 @@
 # Production Management
 
-## HW1 Genetic Algorithm
-
-### problem
-
-One classic problem which is called **traveling salesman problem**. Imagine being a traveling salesman with several houses you have to visit every day. They’re all spread throughout the city, so you have to figure out the route that will let you visit them all in the shortest time.
+## Genetic Algorithm
 
 ### steps
 
@@ -15,7 +11,13 @@ One classic problem which is called **traveling salesman problem**. Imagine bein
 5. Grab the top half of the remaining population, and mix it with the other half which will perform **crossover** and **mutate**
 6. Back to step 3
 
-### example code
+### traveling salesman problem
+
+One classic problem which is called **traveling salesman problem**. Imagine being a traveling salesman with several houses you have to visit every day. They’re all spread throughout the city, so you have to figure out the route that will let you visit them all in the shortest time.
+
+#### example code
+
+[code](./tsp.js)
 
 predefined distances between cities:
 
@@ -34,7 +36,7 @@ predefined distances between cities:
 
 output:
 
-`node main.js`
+`node tsp.js`
 
 ![output](./tsp.png)
 
@@ -52,8 +54,20 @@ result in table:
 |    6    | 35 |   25   |   20  |   15  |   10  |   5   |   0   |    5   | **10** |   15  |
 |    8    | 45 |   35   |   30  |   25  |   20  |   15  |   10  |    5   |    0   | **5** |
 
+### HW-1
+
+Use GA to solve the problem to make sequences "RABCDEFS" to "REFBACDS"
+
+#### example code
+
+[code](./hw-1.js)
+
+output: `node hw-1.js`
+
+![output](./hw-1.png)
+
 ### Conclusion
 
-The code is just a simple example of GA(Genetic Algorithm), and it don't consider many things such as initial points and backtracking, but GA is a interesting way to solving complex problems by letting the solution evolve on its own.
+These code is just a simple example of GA(Genetic Algorithm), and it don't consider many things such as initial points and backtracking, but GA is a interesting way to solving complex problems by letting the solution evolve on its own.
 
 Although GA is not fit for all problems, it is still a useful way to solve problems like finding the best route, job assignment, string comparison, etc. I will find some interesting problems that could be solved by GA in reality and try to implement it in practice.
