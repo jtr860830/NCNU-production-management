@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h4>Enter Cost Matrix:</h4>
+    <table id="matrix-input" class="centered highlight"></table>
+    <br />
+    <div class="buttons">
+      <a class="waves-effect waves-light btn" onclick="addRow()">Add Row</a>
+      <a class="waves-effect waves-light btn" onclick="addColumn()">Add Column</a>
+      <a class="waves-effect waves-light btn" onclick="compute()">Compute Minimum Cost Assignment</a>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
