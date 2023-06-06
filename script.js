@@ -41,6 +41,7 @@ function compute() {
   const result = computeMunkres(matrix);
   console.log(result);
   const resultContainer = document.getElementById("result");
-  const cost = result.reduce((acc, cur) => acc + matrix[cur[0]][cur[1]], 0);
-  resultContainer.innerHTML = `<h5>Minimum Cost: ${cost}</h5>`;
+  const costs = result.map(idx => matrix[idx[0]][idx[1]]);
+  const cost = costs.reduce((acc, cur) => acc + cur, 0);
+  resultContainer.innerHTML = `<h5>Minimum Cost: ${costs.join(" + ")} = ${cost}</h5>`;
 }
